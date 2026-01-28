@@ -37,6 +37,8 @@ const translations = {
     dinner: "Vacsora",
     firstDance: "Nyitótánc",
     cake: "Torta",
+    physicalInvitations: "A fizikai meghívók is már úton vannak!",
+    physicalInvitationsSubtext: "Csak idő kérdése és kezetekben foghatjátok.",
   },
   ro: {
     invited: "Invitație",
@@ -63,6 +65,8 @@ const translations = {
     dinner: "Servirea mesei",
     firstDance: "Dansul mirilor",
     cake: "Tortul",
+    physicalInvitations: "Invitațiile fizice sunt deja în drum!",
+    physicalInvitationsSubtext: "Este doar o chestiune de timp până le veți avea în mâini.",
   },
 };
 
@@ -732,6 +736,26 @@ export default function Home() {
                   </div>
                 </motion.div>
               </div>
+            </section>
+
+            <ElegantDivider />
+
+            {/* Physical Invitations Section */}
+            <section className="relative py-16 px-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="text-center max-w-3xl mx-auto"
+              >
+                <p className="font-[family-name:var(--font-body)] text-2xl sm:text-3xl md:text-4xl text-brown font-semibold mb-4 leading-relaxed">
+                  {t.physicalInvitations}
+                </p>
+                <p className="font-[family-name:var(--font-body)] text-xl sm:text-2xl md:text-3xl text-light-brown leading-relaxed">
+                  {t.physicalInvitationsSubtext}
+                </p>
+              </motion.div>
             </section>
 
             {/* Final Message */}
