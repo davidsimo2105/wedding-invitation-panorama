@@ -5,8 +5,6 @@ const nextConfig = {
     remotePatterns: [],
     unoptimized: false,
   },
-  // Optimize font loading
-  optimizeFonts: true,
 };
 
 export default nextConfig;
