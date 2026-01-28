@@ -589,7 +589,7 @@ export default function Home() {
             <ElegantDivider />
 
             {/* Wedding Party Section */}
-            <section className="relative py-6 px-4 overflow-hidden min-h-[60vh] sm:min-h-auto flex items-center">
+            <section className="relative py-6 px-4 overflow-hidden">
               {/* Background Image */}
               <div className="absolute inset-0 z-0 w-full h-full">
                 <Image
@@ -602,7 +602,7 @@ export default function Home() {
                 />
               </div>
               
-              <div className="max-w-5xl mx-auto text-center relative z-10 px-4 w-full overflow-x-hidden">
+              <div className="max-w-5xl mx-auto text-center relative z-10 px-4 w-full">
                 {/* Parents Section */}
                 <motion.h3
                   initial={{ opacity: 0, y: 30 }}
