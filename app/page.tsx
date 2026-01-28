@@ -25,7 +25,7 @@ const translations = {
     where: "Helyszín",
     venue: "Panorama Boutique Hotel",
     location: "Sepsiszentgyörgy",
-    weddingParty: "Násznagyaink",
+    weddingParty: "Násznagyok",
     contact: "Kapcsolat",
     contactText: "Kérjük, erősítsd meg részvételed telefonon:",
     rsvpDeadline: "Részvételi szándékát kérjük jelezze április 24.-ig a következő telefonszámok egyikén:",
@@ -34,7 +34,7 @@ const translations = {
     waitingFor: "Szeretettel várunk!",
     program: "Program",
     ceremony: "Egyházi szertartás",
-    dinner: "Vacsora",
+    dinner: "Ünnepi ebéd",
     firstDance: "Nyitótánc",
     cake: "Torta",
     physicalInvitations: "A fizikai meghívók is úton vannak már!",
@@ -445,7 +445,7 @@ export default function Home() {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ delay: 1.8, duration: 1 }}
-                  className="absolute bottom-20 left-1/2 -translate-x-1/2"
+                  className="absolute bottom-32 sm:bottom-20 left-1/2 -translate-x-1/2"
                 >
                   <motion.div
                     animate={{ y: [0, 10, 0] }}
@@ -494,10 +494,10 @@ export default function Home() {
                     transition={{ duration: 0.8 }}
                     className="text-center"
                   >
-                    <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-6 font-bold drop-shadow-2xl uppercase">
+                    <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-2 sm:mb-6 font-bold drop-shadow-2xl uppercase">
                       {t.when}
                     </h3>
-                    <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-3 drop-shadow-xl">
+                    <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-1 sm:mb-3 drop-shadow-xl">
                       {t.date}
                     </p>
                     <p className="font-[family-name:var(--font-body)] text-xl text-white drop-shadow-lg">
@@ -513,10 +513,10 @@ export default function Home() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-center"
                   >
-                    <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-[30px] font-bold drop-shadow-2xl uppercase">
+                    <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-2 sm:mb-[30px] font-bold drop-shadow-2xl uppercase">
                       {t.where}
                     </h3>
-                    <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-3 drop-shadow-xl">
+                    <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-1 sm:mb-3 drop-shadow-xl">
                       {t.venue}
                     </p>
                     <p className="font-[family-name:var(--font-body)] text-xl text-white drop-shadow-lg">
@@ -608,7 +608,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="font-[family-name:var(--font-display)] text-[2.625rem] sm:text-6xl md:text-7xl text-white mb-4 font-bold drop-shadow-2xl uppercase break-words"
+                  className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-4 font-bold drop-shadow-2xl uppercase break-words"
                 >
                   {language === "hu" ? "Szüleink" : "Părinții noștri"}
                 </motion.h3>
@@ -618,12 +618,12 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-16 mb-8 sm:mb-12"
+                  className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-16 mb-4 sm:mb-8"
                 >
-                  <p className="font-[family-name:var(--font-body)] text-2xl sm:text-3xl md:text-4xl text-white leading-tight drop-shadow-2xl text-center w-full sm:w-auto break-words px-2">
+                  <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-0 sm:mb-3 drop-shadow-xl text-center w-full sm:w-auto break-words px-2">
                     Vida István {language === "hu" ? "és" : "și"} Angéla
                   </p>
-                  <p className="font-[family-name:var(--font-body)] text-2xl sm:text-3xl md:text-4xl text-white leading-tight drop-shadow-2xl text-center w-full sm:w-auto break-words px-2">
+                  <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-0 sm:mb-3 drop-shadow-xl text-center w-full sm:w-auto break-words px-2">
                     Simó Attila {language === "hu" ? "és" : "și"} Andrea
                   </p>
                 </motion.div>
@@ -633,7 +633,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="font-[family-name:var(--font-display)] text-[2.625rem] sm:text-6xl md:text-7xl text-white mb-4 font-bold drop-shadow-2xl uppercase break-words"
+                  className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-4 font-bold drop-shadow-2xl uppercase break-words"
                 >
                   {t.weddingParty}
                 </motion.h3>
@@ -645,10 +645,10 @@ export default function Home() {
                   transition={{ duration: 0.6 }}
                   className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-16"
                 >
-                  <p className="font-[family-name:var(--font-body)] text-2xl sm:text-3xl md:text-4xl text-white leading-tight drop-shadow-2xl text-center w-full sm:w-auto break-words px-2">
+                  <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-0 sm:mb-3 drop-shadow-xl text-center w-full sm:w-auto break-words px-2">
                     Vida Dániel {language === "hu" ? "és" : "și"} Bianka
                   </p>
-                  <p className="font-[family-name:var(--font-body)] text-2xl sm:text-3xl md:text-4xl text-white leading-tight drop-shadow-2xl text-center w-full sm:w-auto break-words px-2">
+                  <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-0 sm:mb-3 drop-shadow-xl text-center w-full sm:w-auto break-words px-2">
                     Kovács Hunor {language === "hu" ? "és" : "și"} Andrea
                   </p>
                 </motion.div>
@@ -697,8 +697,16 @@ export default function Home() {
                     {t.contact}
                   </h3>
                   
-                  <p className="font-[family-name:var(--font-body)] text-base md:text-lg text-white mb-6 mx-auto leading-relaxed text-center px-4 drop-shadow-xl max-w-3xl">
-                    {t.rsvpDeadline}
+                  <p className="font-[family-name:var(--font-body)] text-xl md:text-2xl lg:text-3xl text-white mb-6 mx-auto leading-tight text-center px-4 drop-shadow-xl max-w-3xl">
+                    {language === "hu" ? (
+                      <>
+                        Részvételi szándékát kérjük jelezze <span className="font-bold">április 24.</span>-ig a következő telefonszámok egyikén:
+                      </>
+                    ) : (
+                      <>
+                        Vă rugăm să confirmați participarea până cel târziu pe <span className="font-bold">24 aprilie</span> la unul dintre numerele de telefon:
+                      </>
+                    )}
                   </p>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3 sm:gap-x-6 sm:gap-y-3 max-w-2xl mx-auto">
@@ -710,10 +718,10 @@ export default function Home() {
                       transition={{ duration: 0.6 }}
                       className="text-center block group"
                     >
-                      <p className="font-[family-name:var(--font-body)] text-2xl text-white mb-2 font-bold group-hover:scale-105 transition-transform duration-300 inline-block drop-shadow-xl">
+                      <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white mb-2 font-bold group-hover:scale-105 transition-transform duration-300 inline-block drop-shadow-xl">
                         {t.hanna}
                       </p>
-                      <p className="font-[family-name:var(--font-body)] text-xl text-white group-hover:text-brown transition-colors drop-shadow-lg">
+                      <p className="font-[family-name:var(--font-body)] text-xl md:text-2xl text-white group-hover:text-brown transition-colors drop-shadow-lg">
                         +36 70 409 6591
                       </p>
                     </motion.a>
@@ -726,10 +734,10 @@ export default function Home() {
                       transition={{ duration: 0.6, delay: 0.2 }}
                       className="text-center block group"
                     >
-                      <p className="font-[family-name:var(--font-body)] text-2xl text-white mb-2 font-bold group-hover:scale-105 transition-transform duration-300 inline-block drop-shadow-xl">
+                      <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white mb-2 font-bold group-hover:scale-105 transition-transform duration-300 inline-block drop-shadow-xl">
                         {t.david}
                       </p>
-                      <p className="font-[family-name:var(--font-body)] text-xl text-white group-hover:text-brown transition-colors drop-shadow-lg">
+                      <p className="font-[family-name:var(--font-body)] text-xl md:text-2xl text-white group-hover:text-brown transition-colors drop-shadow-lg">
                         +40 73 637 4567
                       </p>
                     </motion.a>

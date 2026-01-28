@@ -110,7 +110,7 @@ export default function Countdown({ language }: { language: Language }) {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl text-center text-brown mb-12 font-bold uppercase leading-tight px-2"
+          className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-center text-brown mb-12 font-bold uppercase leading-tight px-2"
         >
           {language === "hu" ? (
             <>
