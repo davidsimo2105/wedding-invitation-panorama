@@ -31,7 +31,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Hanna & Dávid Esküvője - 2026.05.08",
+  title: "Hanna & David 2026.05.08",
   description: "Vida Hanna és Simo Dávid esküvői meghívója - 2026. május 8. Panorama Boutique Hotel, Sepsiszentgyörgy",
 };
 
