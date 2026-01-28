@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* The Seasons Font - Will fallback to Playfair Display if font files are not available */
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/fonts/TheSeasons-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/fonts/TheSeasons-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --font-seasons: 'The Seasons', 'Playfair Display', serif;
+  }
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    position: relative;
+    /* Wrinkled paper texture */
+    background-image: 
+      /* Random wrinkle creases - diagonal */
+      linear-gradient(105deg, transparent 35%, rgba(200, 180, 150, 0.05) 35%, rgba(200, 180, 150, 0.05) 36%, transparent 36%),
+      linear-gradient(78deg, transparent 62%, rgba(210, 190, 160, 0.04) 62%, rgba(210, 190, 160, 0.04) 63%, transparent 63%),
+      linear-gradient(115deg, transparent 18%, rgba(220, 200, 170, 0.04) 18%, rgba(220, 200, 170, 0.04) 19%, transparent 19%),
+      linear-gradient(95deg, transparent 48%, rgba(190, 170, 140, 0.03) 48%, rgba(190, 170, 140, 0.03) 49%, transparent 49%),
+      linear-gradient(85deg, transparent 71%, rgba(230, 215, 190, 0.04) 71%, rgba(230, 215, 190, 0.04) 72%, transparent 72%),
+      /* More subtle creases */
+      linear-gradient(125deg, transparent 25%, rgba(205, 185, 155, 0.02) 25%, rgba(205, 185, 155, 0.02) 26%, transparent 26%),
+      linear-gradient(68deg, transparent 82%, rgba(215, 195, 165, 0.03) 82%, rgba(215, 195, 165, 0.03) 83%, transparent 83%),
+      linear-gradient(112deg, transparent 44%, rgba(225, 205, 175, 0.02) 44%, rgba(225, 205, 175, 0.02) 45%, transparent 45%),
+      /* Fine paper grain */
+      repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(200, 180, 150, 0.02) 1px, rgba(200, 180, 150, 0.02) 2px),
+      repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(210, 190, 160, 0.02) 1px, rgba(210, 190, 160, 0.02) 2px);
+  }
+  
+  /* Add subtle shadow variations for depth */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(ellipse 800px 600px at 20% 30%, rgba(240, 235, 225, 0.15) 0%, transparent 60%),
+      radial-gradient(ellipse 700px 900px at 80% 70%, rgba(235, 225, 210, 0.12) 0%, transparent 55%),
+      radial-gradient(ellipse 600px 700px at 50% 50%, rgba(245, 240, 230, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #895129;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6d3f20;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Next.js Portal positioning */
+nextjs-portal {
+  left: -42px !important;
+  top: 34px !important;
+}
