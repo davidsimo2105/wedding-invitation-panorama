@@ -7,7 +7,6 @@ import Image from "next/image";
 import LoadingScreen from "@/components/LoadingScreen";
 import LanguageToggle from "@/components/LanguageToggle";
 import VenueMap from "@/components/VenueMap";
-import PhotoGallery from "@/components/PhotoGallery";
 import Countdown from "@/components/Countdown";
 
 type Language = "hu" | "ro";
