@@ -14,8 +14,8 @@ const config: Config = {
         tan: "#e8dcc8",
         cream: "#f8f5f0",
         navy: "#000035",
-        brown: "#895129",
-        "light-brown": "#a67c52",
+        brown: "#8F9779",
+        "light-brown": "#a8b298",
       },
       animation: {
         "fade-in": "fadeIn 1s ease-in forwards",

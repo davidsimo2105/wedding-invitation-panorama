@@ -48,7 +48,7 @@ export default function LoadingScreen({ language }: LoadingScreenProps) {
               }}
               d="M60 100 C 60 100, 20 70, 20 45 C 20 30, 30 20, 45 20 C 52 20, 58 24, 60 30 C 62 24, 68 20, 75 20 C 90 20, 100 30, 100 45 C 100 70, 60 100, 60 100 Z"
               fill="none"
-              stroke="#895129"
+              stroke="#8F9779"
               strokeWidth="3"
               strokeLinecap="round"
             />

@@ -166,10 +166,10 @@ const BabysBreath = ({ className = "", scale = 1 }: { className?: string; scale?
     <circle cx="72" cy="72" r="1.5" fill="#ffffff" opacity="0.75" />
     
     {/* Delicate stems */}
-    <line x1="60" y1="60" x2="48" y2="52" stroke="#895129" strokeWidth="0.5" opacity="0.4" />
-    <line x1="60" y1="60" x2="72" y2="54" stroke="#895129" strokeWidth="0.5" opacity="0.4" />
-    <line x1="60" y1="60" x2="54" y2="68" stroke="#895129" strokeWidth="0.5" opacity="0.4" />
-    <line x1="60" y1="60" x2="68" y2="66" stroke="#895129" strokeWidth="0.5" opacity="0.4" />
+    <line x1="60" y1="60" x2="48" y2="52" stroke="#8F9779" strokeWidth="0.5" opacity="0.4" />
+    <line x1="60" y1="60" x2="72" y2="54" stroke="#8F9779" strokeWidth="0.5" opacity="0.4" />
+    <line x1="60" y1="60" x2="54" y2="68" stroke="#8F9779" strokeWidth="0.5" opacity="0.4" />
+    <line x1="60" y1="60" x2="68" y2="66" stroke="#8F9779" strokeWidth="0.5" opacity="0.4" />
   </svg>
 );
 
@@ -374,10 +374,10 @@ export default function Home() {
                   className="mb-12"
                 >
                   <svg width="200" height="40" viewBox="0 0 200 40" className="mx-auto">
-                    <path d="M0 20 Q50 10 100 20 Q150 30 200 20" stroke="#895129" strokeWidth="1" fill="none" opacity="0.4"/>
-                    <circle cx="100" cy="20" r="2" fill="#895129" opacity="0.6"/>
-                    <circle cx="50" cy="15" r="1.5" fill="#895129" opacity="0.4"/>
-                    <circle cx="150" cy="25" r="1.5" fill="#895129" opacity="0.4"/>
+                    <path d="M0 20 Q50 10 100 20 Q150 30 200 20" stroke="#8F9779" strokeWidth="1" fill="none" opacity="0.4"/>
+                    <circle cx="100" cy="20" r="2" fill="#8F9779" opacity="0.6"/>
+                    <circle cx="50" cy="15" r="1.5" fill="#8F9779" opacity="0.4"/>
+                    <circle cx="150" cy="25" r="1.5" fill="#8F9779" opacity="0.4"/>
                   </svg>
                 </motion.div>
 
@@ -399,7 +399,7 @@ export default function Home() {
                   className="relative font-[family-name:var(--font-seasons)] text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-brown font-bold px-4 mb-16 tracking-wide leading-tight uppercase"
                 >
                   {/* Decorative & symbol behind */}
-                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-[family-name:var(--font-display)] font-light italic text-7xl sm:text-8xl md:text-9xl lg:text-[12rem] opacity-10 pointer-events-none select-none tracking-widest">
+                  <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-[family-name:var(--font-display)] font-light italic text-7xl sm:text-8xl md:text-9xl lg:text-[12rem] opacity-25 pointer-events-none select-none tracking-widest">
                     &
                   </span>
                   {/* Names on two lines */}
@@ -560,7 +560,7 @@ export default function Home() {
                         <div 
                           className="w-12 h-12"
                           style={{ 
-                            backgroundColor: '#895129',
+                            backgroundColor: '#8F9779',
                             maskImage: `url(${item.image})`,
                             WebkitMaskImage: `url(${item.image})`,
                             maskSize: 'contain',
@@ -757,8 +757,8 @@ export default function Home() {
               >
                 {/* Decorative flourish */}
                 <svg width="200" height="40" viewBox="0 0 200 40" className="mx-auto mb-8">
-                  <path d="M0 20 Q50 30 100 20 Q150 10 200 20" stroke="#895129" strokeWidth="1" fill="none" opacity="0.4"/>
-                  <circle cx="100" cy="20" r="2" fill="#895129" opacity="0.6"/>
+                  <path d="M0 20 Q50 30 100 20 Q150 10 200 20" stroke="#8F9779" strokeWidth="1" fill="none" opacity="0.4"/>
+                  <circle cx="100" cy="20" r="2" fill="#8F9779" opacity="0.6"/>
                 </svg>
                 
                 <p className="font-[family-name:var(--font-script)] text-6xl md:text-7xl text-brown mb-12">
@@ -767,8 +767,8 @@ export default function Home() {
 
                 {/* Bottom flourish */}
                 <svg width="200" height="40" viewBox="0 0 200 40" className="mx-auto mt-8">
-                  <path d="M0 20 Q50 10 100 20 Q150 30 200 20" stroke="#895129" strokeWidth="1" fill="none" opacity="0.4"/>
-                  <circle cx="100" cy="20" r="2" fill="#895129" opacity="0.6"/>
+                  <path d="M0 20 Q50 10 100 20 Q150 30 200 20" stroke="#8F9779" strokeWidth="1" fill="none" opacity="0.4"/>
+                  <circle cx="100" cy="20" r="2" fill="#8F9779" opacity="0.6"/>
                 </svg>
               </motion.div>
             </section>

@@ -54,10 +54,10 @@ const BabysBreath = ({ className = "", scale = 1 }: { className?: string; scale?
     <circle cx="70" cy="48" r="1.5" fill="#ffffff" opacity="0.75" />
     <circle cx="48" cy="70" r="1.5" fill="#ffffff" opacity="0.75" />
     <circle cx="72" cy="72" r="1.5" fill="#ffffff" opacity="0.75" />
-    <line x1="60" y1="60" x2="48" y2="52" stroke="#895129" strokeWidth="0.5" opacity="0.4" />
-    <line x1="60" y1="60" x2="72" y2="54" stroke="#895129" strokeWidth="0.5" opacity="0.4" />
-    <line x1="60" y1="60" x2="54" y2="68" stroke="#895129" strokeWidth="0.5" opacity="0.4" />
-    <line x1="60" y1="60" x2="68" y2="66" stroke="#895129" strokeWidth="0.5" opacity="0.4" />
+    <line x1="60" y1="60" x2="48" y2="52" stroke="#8F9779" strokeWidth="0.5" opacity="0.4" />
+    <line x1="60" y1="60" x2="72" y2="54" stroke="#8F9779" strokeWidth="0.5" opacity="0.4" />
+    <line x1="60" y1="60" x2="54" y2="68" stroke="#8F9779" strokeWidth="0.5" opacity="0.4" />
+    <line x1="60" y1="60" x2="68" y2="66" stroke="#8F9779" strokeWidth="0.5" opacity="0.4" />
   </svg>
 );
 
