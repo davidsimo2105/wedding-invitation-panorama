@@ -37,7 +37,7 @@ const translations = {
     dinner: "Vacsora",
     firstDance: "Nyitótánc",
     cake: "Torta",
-    physicalInvitations: "A fizikai meghívók is már úton vannak!",
+    physicalInvitations: "A fizikai meghívók is úton vannak már!",
     physicalInvitationsSubtext: "Csak idő kérdése és kezetekben foghatjátok.",
   },
   ro: {
@@ -64,7 +64,7 @@ const translations = {
     ceremony: "Ceremonia religioasă",
     dinner: "Servirea mesei",
     firstDance: "Dansul mirilor",
-    cake: "Tortul",
+    cake: "Tort",
     physicalInvitations: "Invitațiile fizice sunt deja în drum!",
     physicalInvitationsSubtext: "Este doar o chestiune de timp până le veți avea în mâini.",
   },
@@ -738,26 +738,6 @@ export default function Home() {
               </div>
             </section>
 
-            <ElegantDivider />
-
-            {/* Physical Invitations Section */}
-            <section className="relative py-16 px-4">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="text-center max-w-3xl mx-auto"
-              >
-                <p className="font-[family-name:var(--font-body)] text-2xl sm:text-3xl md:text-4xl text-brown font-semibold mb-4 leading-relaxed">
-                  {t.physicalInvitations}
-                </p>
-                <p className="font-[family-name:var(--font-body)] text-xl sm:text-2xl md:text-3xl text-light-brown leading-relaxed">
-                  {t.physicalInvitationsSubtext}
-                </p>
-              </motion.div>
-            </section>
-
             {/* Final Message */}
             <section className="relative py-20 px-4">
               <motion.div
@@ -782,6 +762,24 @@ export default function Home() {
                   <path d="M0 20 Q50 10 100 20 Q150 30 200 20" stroke="#895129" strokeWidth="1" fill="none" opacity="0.4"/>
                   <circle cx="100" cy="20" r="2" fill="#895129" opacity="0.6"/>
                 </svg>
+              </motion.div>
+            </section>
+
+            {/* Physical Invitations Section */}
+            <section className="relative py-6 px-4 bg-brown">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="text-center max-w-lg mx-auto"
+              >
+                <p className="font-[family-name:var(--font-body)] text-sm sm:text-base md:text-lg text-white font-semibold mb-0.5 leading-tight">
+                  {t.physicalInvitations}
+                </p>
+                <p className="font-[family-name:var(--font-body)] text-xs sm:text-sm md:text-base text-tan leading-tight">
+                  {t.physicalInvitationsSubtext}
+                </p>
               </motion.div>
             </section>
           </motion.main>
