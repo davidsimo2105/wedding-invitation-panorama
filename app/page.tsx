@@ -514,10 +514,10 @@ export default function Home() {
                     <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-2 sm:mb-6 font-bold drop-shadow-2xl uppercase">
                       {t.when}
                     </h3>
-                    <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-1 sm:mb-3 drop-shadow-xl">
+                    <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-1 sm:mb-2 drop-shadow-xl">
                       {t.date}
                     </p>
-                    <p className="font-[family-name:var(--font-body)] text-xl text-white drop-shadow-lg">
+                    <p className="font-[family-name:var(--font-body)] text-xl text-white drop-shadow-lg -mb-1 md:-mb-2">
                       {t.time}
                     </p>
                   </motion.div>
@@ -530,13 +530,13 @@ export default function Home() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-center"
                   >
-                    <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-2 sm:mb-[30px] font-bold drop-shadow-2xl uppercase">
+                    <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-2 sm:mb-6 font-bold drop-shadow-2xl uppercase">
                       {t.where}
                     </h3>
-                    <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-1 sm:mb-3 drop-shadow-xl">
+                    <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-1 sm:mb-2 drop-shadow-xl">
                       {t.venue}
                     </p>
-                    <p className="font-[family-name:var(--font-body)] text-xl text-white drop-shadow-lg">
+                    <p className="font-[family-name:var(--font-body)] text-xl text-white drop-shadow-lg -mb-1 md:-mb-2">
                       {t.location}
                     </p>
                   </motion.div>
@@ -619,7 +619,7 @@ export default function Home() {
                 />
               </div>
               
-              <div className="max-w-5xl mx-auto text-center relative z-10 px-4 w-full">
+              <div className="max-w-5xl mx-auto text-center relative z-10 px-4 w-full pt-5 md:pt-6">
                 {/* Parents Section */}
                 <motion.h3
                   initial={{ opacity: 0, y: 30 }}
@@ -660,7 +660,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-16"
+                  className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-16 mb-3 md:mb-1"
                 >
                   <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-0 sm:mb-3 drop-shadow-xl text-center w-full sm:w-auto break-words px-2">
                     Vida Dániel {language === "hu" ? "és" : "și"} Bianka
@@ -691,7 +691,7 @@ export default function Home() {
             <ElegantDivider />
 
             {/* Contact Section */}
-            <section className="relative py-12 px-4 overflow-hidden">
+            <section className="relative pt-9 pb-10 px-4 overflow-hidden">
               {/* Background Image */}
               <div className="absolute inset-0 z-0 w-full h-full">
                 <Image
@@ -806,7 +806,7 @@ export default function Home() {
             </section>
 
             {/* Physical Invitations Section */}
-            <section className="relative py-6 px-4 bg-brown">
+            <section className="relative py-4 px-4 bg-brown">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
