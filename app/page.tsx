@@ -194,10 +194,10 @@ const FloralGarland = () => (
 // Elegant Divider
 const ElegantDivider = () => (
   <motion.div 
-    initial={{ scaleX: 0 }}
-    whileInView={{ scaleX: 1 }}
-    viewport={{ once: true }}
-    transition={{ duration: 1 }}
+    initial={{ scaleX: 0, opacity: 0 }}
+    whileInView={{ scaleX: 1, opacity: 1 }}
+    viewport={{ once: true, margin: "-50px" }}
+    transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
     className="flex items-center justify-center my-8 w-full max-w-2xl mx-auto gap-4"
   >
     <div className="flex-1 h-px bg-gradient-to-r from-transparent via-brown/40 to-brown/40" />
@@ -507,8 +507,8 @@ export default function Home() {
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
                     className="text-center"
                   >
                     <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-2 sm:mb-6 font-bold drop-shadow-2xl uppercase">
@@ -526,8 +526,8 @@ export default function Home() {
                   <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 1, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
                     className="text-center"
                   >
                     <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-2 sm:mb-6 font-bold drop-shadow-2xl uppercase">
@@ -552,7 +552,8 @@ export default function Home() {
                 <motion.h3
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
                   className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-center text-brown mb-16 font-bold uppercase"
                 >
                   {t.program}
@@ -569,8 +570,8 @@ export default function Home() {
                       key={index}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: item.delay }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{ duration: 0.8, delay: item.delay, ease: [0.25, 0.1, 0.25, 1] }}
                       className="flex items-start gap-6 pl-4 sm:pl-8"
                     >
                       <div className="flex-shrink-0 flex items-center h-full pt-2">
@@ -624,7 +625,8 @@ export default function Home() {
                 <motion.h3
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
                   className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-4 font-bold drop-shadow-2xl uppercase break-words"
                 >
                   {language === "hu" ? "Szüleink" : "Părinții noștri"}
@@ -633,8 +635,8 @@ export default function Home() {
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
                   className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-16 mb-4 sm:mb-8"
                 >
                   <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-0 sm:mb-3 drop-shadow-xl text-center w-full sm:w-auto break-words px-2">
@@ -649,7 +651,8 @@ export default function Home() {
                 <motion.h3
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
                   className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-4 font-bold drop-shadow-2xl uppercase break-words"
                 >
                   {t.weddingParty}
@@ -658,8 +661,8 @@ export default function Home() {
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
                   className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-16 mb-3 md:mb-1"
                 >
                   <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white font-semibold mb-0 sm:mb-3 drop-shadow-xl text-center w-full sm:w-auto break-words px-2">
@@ -680,8 +683,8 @@ export default function Home() {
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
                 >
                   <VenueMap language={language} />
                 </motion.div>
@@ -708,7 +711,8 @@ export default function Home() {
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
                 >
                   <h3 className="font-[family-name:var(--font-display)] text-5xl md:text-6xl text-white mb-8 font-bold drop-shadow-2xl uppercase">
                     {t.contact}
@@ -746,8 +750,8 @@ export default function Home() {
                       href="tel:+36704096591"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
                       className="text-center block group"
                     >
                       <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white mb-2 font-bold group-hover:scale-105 transition-transform duration-300 inline-block drop-shadow-xl">
@@ -762,8 +766,8 @@ export default function Home() {
                       href="tel:+40736374567"
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6, delay: 0.2 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
                       className="text-center block group"
                     >
                       <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white mb-2 font-bold group-hover:scale-105 transition-transform duration-300 inline-block drop-shadow-xl">
@@ -781,10 +785,10 @@ export default function Home() {
             {/* Final Message */}
             <section className="relative py-20 px-4">
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
                 className="text-center max-w-2xl mx-auto"
               >
                 {/* Decorative flourish */}
@@ -811,7 +815,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
+                transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1] }}
                 className="text-center max-w-lg mx-auto"
               >
                 <p className="font-[family-name:var(--font-body)] text-sm sm:text-base md:text-lg text-white font-semibold mb-0.5 leading-tight">
