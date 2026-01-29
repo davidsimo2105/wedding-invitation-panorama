@@ -17,7 +17,7 @@ const translations = {
     subtitle: "Esküvői meghívó",
     ourWedding: "Esküvőnk",
     together: "",
-    invite: "Szeretettel meghívunk Benneteket, hogy velünk ünnepeljetek 2026. május 8.-án, amikor összekötjük életünket és örök hűséget fogadunk egymásnak.",
+    invite: "Szeretettel meghívunk az esküvőnkre 2026. május 8-án, ünnepeljük együtt életünk egyik legszebb napját!",
     names: "Hanna & Dávid",
     when: "Időpont",
     date: "2026. május 8.",
@@ -28,7 +28,7 @@ const translations = {
     weddingParty: "Násznagyok",
     contact: "Kapcsolat",
     contactText: "Kérjük, erősítsd meg részvételed telefonon:",
-    rsvpDeadline: "Részvételi szándékát kérjük jelezze április 24.-ig a következő telefonszámok egyikén:",
+    rsvpDeadline: "Részvételi szándékotokat kérjük jelezzétek április 24-ig az alábbi telefonszámok egyikén.",
     hanna: "Hanna",
     david: "Dávid",
     waitingFor: "Szeretettel várunk!",
@@ -419,11 +419,28 @@ export default function Home() {
                   <p className="font-[family-name:var(--font-body)] text-xl sm:text-2xl md:text-3xl text-light-brown leading-relaxed">
                     {language === "hu" ? (
                       <>
-                        Szeretettel meghívunk Benneteket, hogy velünk ünnepeljetek{" "}
-                        <span className="text-brown font-bold">
-                          2026. május 8.-án
+                        {/* Mobile version */}
+                        <span className="block sm:hidden">
+                          Szeretettel meghívunk az{" "}
+                          <br />
+                          esküvőnkre{" "}
+                          <span className="text-brown font-bold">2026. május 8-án</span>,{" "}
+                          <br />
+                          ünnepeljük együtt életünk{" "}
+                          <br />
+                          egyik legszebb napját!
                         </span>
-                        , amikor összekötjük életünket és örök hűséget fogadunk egymásnak.
+                        {/* Desktop version */}
+                        <span className="hidden sm:block">
+                          Szeretettel meghívunk az esküvőnkre{" "}
+                          <br />
+                          <span className="text-brown font-bold">
+                            2026. május 8-án
+                          </span>
+                          , ünnepeljük együtt{" "}
+                          <br />
+                          életünk egyik legszebb napját!
+                        </span>
                       </>
                     ) : (
                       <>
@@ -697,10 +714,25 @@ export default function Home() {
                     {t.contact}
                   </h3>
                   
-                  <p className="font-[family-name:var(--font-body)] text-xl md:text-2xl lg:text-3xl text-white mb-6 mx-auto leading-tight text-center px-4 drop-shadow-xl max-w-3xl">
+                  <p className="font-[family-name:var(--font-body)] text-2xl md:text-2xl lg:text-3xl text-white mb-6 mx-auto leading-tight text-center px-4 drop-shadow-xl max-w-3xl">
                     {language === "hu" ? (
                       <>
-                        Részvételi szándékát kérjük jelezze <span className="font-bold">április 24.</span>-ig a következő telefonszámok egyikén:
+                        {/* Mobile version */}
+                        <span className="block sm:hidden">
+                          Részvételi szándékotokat{" "}
+                          <br />
+                          kérjük jelezzétek{" "}
+                          <br />
+                          <span className="font-bold">április 24</span>-ig az alábbi{" "}
+                          <br />
+                          telefonszámok egyikén.
+                        </span>
+                        {/* Desktop version */}
+                        <span className="hidden sm:block">
+                          Részvételi szándékotokat kérjük jelezzétek{" "}
+                          <br />
+                          <span className="font-bold">április 24</span>-ig az alábbi telefonszámok egyikén.
+                        </span>
                       </>
                     ) : (
                       <>
@@ -721,7 +753,7 @@ export default function Home() {
                       <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white mb-2 font-bold group-hover:scale-105 transition-transform duration-300 inline-block drop-shadow-xl">
                         {t.hanna}
                       </p>
-                      <p className="font-[family-name:var(--font-body)] text-xl md:text-2xl text-white group-hover:text-brown transition-colors drop-shadow-lg">
+                      <p className="font-[family-name:var(--font-body)] text-2xl md:text-2xl lg:text-3xl text-white group-hover:text-brown transition-colors drop-shadow-lg">
                         +36 70 409 6591
                       </p>
                     </motion.a>
@@ -737,7 +769,7 @@ export default function Home() {
                       <p className="font-[family-name:var(--font-body)] text-2xl md:text-3xl text-white mb-2 font-bold group-hover:scale-105 transition-transform duration-300 inline-block drop-shadow-xl">
                         {t.david}
                       </p>
-                      <p className="font-[family-name:var(--font-body)] text-xl md:text-2xl text-white group-hover:text-brown transition-colors drop-shadow-lg">
+                      <p className="font-[family-name:var(--font-body)] text-2xl md:text-2xl lg:text-3xl text-white group-hover:text-brown transition-colors drop-shadow-lg">
                         +40 73 637 4567
                       </p>
                     </motion.a>
