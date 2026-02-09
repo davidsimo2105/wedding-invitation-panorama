@@ -564,7 +564,7 @@ export default function Home() {
                     { image: "/images/rings.png", time: "16:00", text: t.ceremony, delay: 0.1 },
                     { image: "/images/cutlery.png", time: "17:00", text: t.dinner, delay: 0.2 },
                     { image: "/images/dance.png", time: "18:00", text: t.firstDance, delay: 0.3 },
-                    { image: "/images/wedding-cake.png", time: "22:00", text: t.cake, delay: 0.4 },
+                    { image: "/images/wedding-cake.png", time: "00:00", text: t.cake, delay: 0.4 },
                   ].map((item, index) => (
                     <motion.div
                       key={index}
